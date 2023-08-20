@@ -1,5 +1,6 @@
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Image;
 import com.itextpdf.text.Phrase;
 import com.itextpdf.text.pdf.PdfWriter;
 
@@ -25,12 +26,15 @@ public class Main {
         // We generate a content
         Phrase demoPhrase = new Phrase("Hello world :)");
 
+        // Create an image instance
+        Image image = Image.getInstance("image-test.png");
+
         // We add the content to the document
         document.add(demoPhrase);
+        document.add(image);
 
         // This method save the document after manipulate it
         document.close();
-
         System.out.println("The document has been created successfully :)");
     }
 }
