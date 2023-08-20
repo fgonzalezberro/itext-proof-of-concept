@@ -30,6 +30,8 @@ public class Main {
         Image image = Image.getInstance("image-test.png");
         // Setting the image size
         image.scaleToFit(200, 150);
+        // Positioning the image in the document
+        image.setAbsolutePosition(380, 5);
 
         // We add the content to the document
         document.add(demoPhrase);
