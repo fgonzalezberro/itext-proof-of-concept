@@ -28,6 +28,8 @@ public class Main {
 
         // Create an image instance
         Image image = Image.getInstance("image-test.png");
+        // Setting the image size
+        image.scaleToFit(200, 150);
 
         // We add the content to the document
         document.add(demoPhrase);
